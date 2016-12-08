@@ -1,0 +1,19 @@
+
+
+
+//Create the Manifest
+
+//Make the package
+C:\Program Files (x86)\Windows Kits\8.1\bin\x86>makeappx.exe pack /d "C:\Users\Scalar\Documents\Visual Studio 2015\Projects\SystemTrayApp\SystemTrayApp\publish" /p "C:\Temp\ReadyForSleep.appx"
+
+//Make Certificates
+C:\Program Files (x86)\Windows Kits\8.1\bin\x86>makecert.exe /n "CN=Studio Kaffekask" /r /h 0 /eku "1.3.6.1.5.5.7.3.3,1.3.6.1.4.1.311.10.3.13" /e "01/01/2025" /sv MyKey5.pvk MyKey5.cer
+
+//Add to certificates
+C:\Program Files (x86)\Windows Kits\8.1\bin\x86>Certutil -addStore TrustedPeople MyKey5.cer
+
+//Converting certificate:
+C:\Program Files (x86)\Windows Kits\8.1\bin\x86>pvk2pfx.exe -pvk MyKey5.pvk -pi password -spc MyKey5.cer -pfx MyKey5.pfx -f
+
+//Signing:
+"C:\Program Files (x86)\Windows Kits\8.1\bin\x86\"SignTool.exe sign /fd SHA256 /a /f MyKey5.pfx /p password ReadyForSleep.appx
