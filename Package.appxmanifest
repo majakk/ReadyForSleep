@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="23233684-5800-49a4-8a5b-465c3da07360" Publisher="CN=Scalar" Version="1.0.0.0" />
+  <Identity Name="37570StudioColdstream.ReadyforSleep" Publisher="CN=3EEFF52C-F9F2-4D4C-BF82-401DDE4CDAD7" Version="1.0.0.14" />
   <mp:PhoneIdentity PhoneProductId="23233684-5800-49a4-8a5b-465c3da07360" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>ReadyForSleep</DisplayName>
-    <PublisherDisplayName>Scalar</PublisherDisplayName>
+    <PublisherDisplayName>Studio Kaffekask</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
