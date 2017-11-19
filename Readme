@@ -1,4 +1,8 @@
-
+This is a regular windows program (tested on Windows 10) for visuializing when the computer is ready to go to sleep. 
+Usually windows does not tell this and many things can stall it from going to sleep e.g. sound and video.
+A heart shows its state - if green, then its ready for sleep - if yellow, one thing is blocking - if red, two or
+more things are blocking it from sleep. Unfortunately this system information can only be retrieved as administrator
+(which is quite weird actually) so the program will ask for such rights when installed. Cheers!
 
 
 //Create the Manifest
